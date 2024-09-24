@@ -13,5 +13,6 @@ M.base46 = {
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
+M.plugins = require("plugins.init")
 
 return M
