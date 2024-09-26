@@ -24,6 +24,26 @@ return {
     },
   },
   {
+    "NvChad/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup {
+        user_default_options = {
+          tailwind = true,
+          RGB = true,
+          RRGGBB = true,
+          RRGGBBAA = true,
+          AARRGGBB = true,
+          hsl_fn = true,
+          rgb_fn = true,
+        },
+      }
+      filetypes = {
+        "*", -- Highlight all files, but customize some others.
+        cmp_docs = { always_update = true },
+      }
+    end,
+  },
+  {
     "windwp/nvim-ts-autotag",
     ft = {
       "javascript",
